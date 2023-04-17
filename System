@@ -3,7 +3,8 @@
 
 -- Instances:
 
-getgenv().Keys = {"loltesta101","tester101"}
+getgenv().Keys = "loltester101"
+
 
 local ScreenGui = Instance.new("ScreenGui")
 local TextBox = Instance.new("TextBox")
@@ -19,7 +20,7 @@ TextBox.Parent = ScreenGui
 TextBox.BackgroundColor3 = Color3.fromRGB(13, 35, 41)
 TextBox.BorderSizePixel = 0
 TextBox.Position = UDim2.new(0.343885779, 0, 0.481481433, 0)
-TextBox.Size = UDim2.new(0, 503, 0, 33)
+TextBox.Size = UDim2.new(0.312228441, 0, 0.0407407396, 0)
 TextBox.Font = Enum.Font.Unknown
 TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.PlaceholderText = "Enter your Key"
@@ -31,14 +32,20 @@ TextButton.Parent = ScreenGui
 TextButton.BackgroundColor3 = Color3.fromRGB(13, 35, 41)
 TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.456859082, 0, 0.550617278, 0)
-TextButton.Size = UDim2.new(0, 138, 0, 29)
+TextButton.Size = UDim2.new(0.0856610835, 0, 0.0358024687, 0)
 TextButton.Font = Enum.Font.Unknown
 TextButton.Text = "Get Key"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 14.000
+TextButton.MouseButton1Click:Connect(function()
+	if TextBox.Text == getgenv().Keys then
+		ScreenGui:Destroy()
+	end
+end)
+
 
 ImageLabel.Parent = ScreenGui
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Position = UDim2.new(0.457479805, 0, 0.279012322, 0)
-ImageLabel.Size = UDim2.new(0, 137, 0, 139)
+ImageLabel.Size = UDim2.new(0.0850403458, 0, 0.171604931, 0)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=13104076975"
