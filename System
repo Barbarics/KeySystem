@@ -1,0 +1,44 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+getgenv().Keys = {"loltesta101","tester101"}
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextBox.Parent = ScreenGui
+TextBox.BackgroundColor3 = Color3.fromRGB(13, 35, 41)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.343885779, 0, 0.481481433, 0)
+TextBox.Size = UDim2.new(0, 503, 0, 33)
+TextBox.Font = Enum.Font.Unknown
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.PlaceholderText = "Enter your Key"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(13, 35, 41)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.456859082, 0, 0.550617278, 0)
+TextButton.Size = UDim2.new(0, 138, 0, 29)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "Get Key"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+ImageLabel.Parent = ScreenGui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.457479805, 0, 0.279012322, 0)
+ImageLabel.Size = UDim2.new(0, 137, 0, 139)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=13104076975"
